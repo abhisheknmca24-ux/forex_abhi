@@ -114,7 +114,7 @@ def analyze_pair(symbol, name):
         prev_low = prev['Low']
 
         # ===== VOLATILITY FILTER
-        if atr_val < 0:
+        if atr_val < 0.0005:
             return None
 
         # ==========================
